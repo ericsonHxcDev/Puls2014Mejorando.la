@@ -29,9 +29,20 @@
 			<li><a href="#">JavaScript</a></li>
 			<li><a href="#">CSS</a></li>
 			<li><a href="#">DJango</a></li>
-			<li id="publicar-nav"><a href="#" class="icon-lapiz">Publicar</a></li>
+			<li id="publicar-nav"><a href="#" id='mostrarForm' class="icon-lapiz">Publicar</a></li>
 		</ul>
 	</nav>
+	<form metod="post" id="formulario" class="formulario">
+		<input type="text" name="titulo" id="titulo" placeholder="Título" required/>
+		<input type="url" name="url" id="url" placeholder="Url" required/>
+		<input type="submit" id="agregar" value="Agregar" />
+	</form>
+	<aside>
+		<video width="320" height="240" controls autoplay>
+			<source src="assets/videos/lecturas.m4v" type="video/mp4" />
+			<source src="assets/videos/lecturas.ogg" type="video/ogg" />
+		</video>
+	</aside>
 	<section id="contenido">
 		<article class="item">
 			<figure class="imagen_item">
@@ -160,5 +171,7 @@
 			mejorando.la 2014
 		</p>
 	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="formulario.js"></script>
 </body>
 </html>

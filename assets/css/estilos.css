@@ -67,6 +67,10 @@ a{
 	color: #22BCE0;
 }
 
+aside{
+	display: none;
+}
+
 header{
 	background-color: #344454;
 	color: white;
@@ -255,6 +259,28 @@ footer p:last-child:before{
 	text-decoration: none;
 }
 
+/**
+formulario
+*/
+
+.formulario{
+	padding: 1em;
+	text-align: right;
+	display: none;
+}
+.formulario input{
+	padding: 0.2em 0.8em;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.formulario input[type="submit"]{
+	background-color: #22BCE0;
+	color: white;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	font-style: italic;
+}
+
 
 @media screen and (min-width: 800px){
 	#contenido
@@ -272,7 +298,17 @@ footer p:last-child:before{
 }
 
 
-
+@media screen and (min-width: 1000px){
+	aside{
+		display: block;
+		float: right;
+		margin-bottom: 1em;
+		width: 25%;
+	}
+	aside video{
+		width: 100%;
+	}
+}
 
 
 
